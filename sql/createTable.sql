@@ -1,0 +1,13 @@
+drop database  if exists  spring_boots_db;
+create database spring_boots_db;
+use spring_boots_db;
+
+drop table if exists user_info;
+create table user_info(
+  id bigint(10) not null auto_increment primary key comment '主键',
+  name varchar(18) not null comment '用户姓名',
+  age int(10) not null comment '用户年龄',
+  email varchar(20) not null default '' comment '用户邮箱',
+  phone varchar(20) not null default '' comment '用户手机号'
+
+)
