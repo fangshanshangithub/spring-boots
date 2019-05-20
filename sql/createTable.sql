@@ -8,7 +8,8 @@ create table user_info(
   name varchar(18) not null comment '用户姓名',
   age int(10) not null comment '用户年龄',
   email varchar(20) not null default '' comment '用户邮箱',
-  phone varchar(20) not null default '' comment '用户手机号'
+  phone varchar(20) not null default '' comment '用户手机号',
+  time  TIMESTAMP  not null default CURRENT_TIMESTAMP comment '时间'
 
 ) CHARACTER SET utf8 COLLATE utf8_general_ci;
 
