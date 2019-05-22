@@ -70,12 +70,8 @@
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>-->
 
-        <table tableName="py_class_course" domainObjectName="ClassCourse"
+        <table tableName="user_info" domainObjectName="UserInfo"
                enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" />
-
-        <table tableName="py_order_course" domainObjectName="OrderCourse"
-               enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" />
-
 
 
 

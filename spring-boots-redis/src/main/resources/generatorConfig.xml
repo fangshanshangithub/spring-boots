@@ -17,9 +17,9 @@
 
         <!--数据库连接 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/spring_boots_db"
-                        userId="root"
-                        password="root">
+                        connectionURL="jdbc:mysql://10.10.200.203:3306/peiyou"
+                        userId="education"
+                        password="lexue123">
         </jdbcConnection>
 
         <!--
@@ -46,11 +46,13 @@
         </javaClientGenerator>
 
         <!--对应数据库表 mysql可以加入主键自增 字段命名 忽略某字段等-->
-        <table tableName="user_info" domainObjectName="UserInfo"
-               enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false">
+        <table tableName="py_class_course" domainObjectName="ClassCourse"
+               enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" />
+
+        <table tableName="py_order_course" domainObjectName="OrderCourse"
+               enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" />
 
 
-        </table>
 
     </context>
 </generatorConfiguration>

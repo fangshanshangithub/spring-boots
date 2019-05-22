@@ -1,7 +1,7 @@
 package com.data.base;
 
-import com.data.base.entity.UserInfo;
-import com.data.base.service.UserService;
+import com.data.base.entity.DataDTO;
+import com.data.base.service.DataClassService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,29 +18,12 @@ import java.util.List;
 public class DatabaseBaseApplicationTests {
 
     @Autowired
-    private UserService userService;
+    private DataClassService dataClassService;
 
     @Test
     public void contextLoads() {
-        List<UserInfo> list = userService.findAll();
-
-
-        Collections.sort(list,new Comparator<UserInfo>() {
-
-            @Override
-            public int compare(UserInfo arg0, UserInfo arg1) {
-                /**
-                 * 升序排的话就是第一个参数.compareTo(第二个参数);
-                 * 降序排的话就是第二个参数.compareTo(第一个参数);
-                 */
-                return arg1.getTime().compareTo(arg0.getTime());
-            }
-        });
-        for(UserInfo bean: list) {
-            System.out.print("@@@@@@@@@@@@@@@@@"+ new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(bean.getTime()) +"\n");
-        }
-
-        System.out.println("=====" + list.toString());
+        List<DataDTO>  orderDetailIdList = dataClassService.findAllOrderDetailIds();
+        System.out.println("size ====== " + orderDetailIdList.size());
     }
 
 }

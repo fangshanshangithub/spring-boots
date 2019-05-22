@@ -12,7 +12,7 @@ spring:
   mvc:
     static-path-pattern: /static/**
 
-  # redis 配置
+  #### ===============  redis 配置  ====================
   redis:
     host: 127.0.0.1
     port: 6379
@@ -29,6 +29,7 @@ spring:
         max-wait:  -1s
         # 最大活跃连接数，负数为不限制
         max-active: -1
+  #### ===============  redis 配置   END ====================
 
   datasource:
     # 使用阿里的Druid连接池
