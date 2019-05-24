@@ -82,7 +82,7 @@ public class TestController {
             logger.info("####订单详情Id为{},对应有{}个course记录,总金额是{},非最后一节课的价格是{},最后一节课{}(di)的价格是{}"
                     , key, courseSum, totalMoney, coursePrice,lastId , lastCoursePrice);
 
-            dataClassService.changeCourse(key,coursePrice,lastCoursePrice,lastId);
+            //dataClassService.changeCourse(key,coursePrice,lastCoursePrice,lastId);
 
 
          }

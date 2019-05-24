@@ -1,4 +1,4 @@
-package com.fangss.utils.redisutils;
+package com.boot.redis.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

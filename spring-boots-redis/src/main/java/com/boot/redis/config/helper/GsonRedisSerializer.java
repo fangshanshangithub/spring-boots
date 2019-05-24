@@ -1,4 +1,3 @@
-/*
 package com.boot.redis.config.helper;
 
 import com.google.gson.Gson;
@@ -7,12 +6,11 @@ import org.springframework.data.redis.serializer.SerializationException;
 
 import java.nio.charset.Charset;
 
-*/
 /**
+ * 没有用上 ###
  * Redis 自定义序列化，解决存储的乱码问题，方便查看，使用的是Gson 的序列化
  * @param <T>
- *//*
-
+ */
 public class GsonRedisSerializer<T> implements RedisSerializer<T> {
 
     public static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");
@@ -44,4 +42,3 @@ public class GsonRedisSerializer<T> implements RedisSerializer<T> {
         return gson.fromJson(str, clazz);
     }
 }
-*/
