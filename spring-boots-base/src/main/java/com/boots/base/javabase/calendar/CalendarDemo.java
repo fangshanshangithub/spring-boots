@@ -28,8 +28,5 @@ public class CalendarDemo {
         String startTime = sdf.format(date);
         System.out.println(startTime);
         return date.getTime();
-
-
-
     }
 }
